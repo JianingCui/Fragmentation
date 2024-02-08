@@ -10,12 +10,12 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(500, 800);
+  createCanvas(windowWidth, windowHeight);
 
   // 计算等比缩放后的图片宽度和高度
   let scaleFactor = width / img.width;
-  let scaledWidth = img.width * scaleFactor * 0.8;
-  let scaledHeight = img.height * scaleFactor * 0.8;
+  let scaledWidth = img.width * scaleFactor * 0.6;
+  let scaledHeight = img.height * scaleFactor * 0.6;
 
   // 计算图片在画布中央的位置
   let x = (width - scaledWidth) / 2;
